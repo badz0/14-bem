@@ -1,0 +1,80 @@
+body, html {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --accent: #4D1ED3;
+}
+
+.page {
+  padding-left: 80px;
+  background-color: #F5F6FA;
+}
+
+.icon {
+  fill: #A3A3A3;
+  width: 21px;
+  height: 21px;
+}
+.icon--big {
+  width: 30px;
+  height: 30px;
+}
+
+
+.page__sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  border-right: 1px solid #F1F1F1;
+}
+.sidebar__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 230px;
+}
+
+.sidebar__item:hover .icon,
+.sidebar__item--active .icon {
+  fill: #4D1ED3;
+}
+
+
+.header {
+  display: flex;
+  min-height: 85px;
+  align-items: center;
+}
+
+.header__add-button {
+  margin-right: auto;
+}
+
+.header__user-info {
+  margin-left: 50px;
+}
+
+
+.requests-indicator__line {
+  width: 300px;
+  background-color: #EEF3F6;
+  border-radius: 10px;
+}
+
+.requests-indicator__line-fill {
+  --fill-width: 50%;
+  border-radius: 10px;
+  width: var(--fill-width);
+  height: 10px;
+  background-color: var(--accent);
+}
